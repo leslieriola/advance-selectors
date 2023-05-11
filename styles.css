@@ -1,0 +1,152 @@
+:root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Pseudo Classes
+:focus
+:hover
+:active
+:link
+:visited
+
+Structural Psedo Classes
+:root
+:first-child
+:last-child
+:nth-child()
+:empty */
+
+main{
+  background-color: #ffffff;
+}
+
+main > div > div{
+  background-color: #ffff00;
+
+}
+
+.group1 + div{
+
+  background-color: #0000ff;
+  
+}
+
+.group1 + div + div{
+
+  background-color: #09b9ff;
+  
+}
+
+
+textarea:focus{
+
+  background-color: pink;
+
+}
+
+a:hover{
+
+  color: rgb(255, 10, 247);
+  text-decoration: underline overline;
+}
+
+button:active{
+  top: 2px;
+  background-color: red;
+}
+
+a:link{
+  color: #fb0a0a;
+
+}
+
+a:visited{
+  color: #002fff;
+
+}
+
+li:first-child{
+
+  background-color: red;
+
+}
+
+li:last-child{
+  text-decoration: underline;
+
+}
+
+li:nth-child(even){
+
+  background-color: rgb(122, 157, 100);
+}
+
+
+li:nth-child(odd){
+
+  background-color: rgb(0, 126, 110);
+
+}
+
+section:empty{
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+}
+
+
+
+
+/* Pseudo Elements
+  ::marker
+  ::first-letter
+  ::first-line
+  ::before
+  ::after */
+
+ol li::marker{
+
+  color: #fb0a0a;
+  font-weight: bold;
+}
+
+p::first-letter{
+  font-weight: bold;
+  color: #fb0a0a;
+  font-size: 30px;
+}
+
+p::first-line{
+  font-weight: bold;
+  color: #ff0000;
+}
+
+p::selection{
+  background-color: #0000ff;
+  color: #ff0000;
+}
+
+span::before {
+  content: "😎 🥸 🤓";
+}
+
+span::after {
+  content: "🤓 🥸 😎";
+}
+
+img[alt]{
+
+  width: 200px;
+
+}
+
+/* Attributes
+[src]
+[alt]
+[href] */
+
+
+
+
